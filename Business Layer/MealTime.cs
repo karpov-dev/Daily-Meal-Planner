@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer
 {
-    class MealTime
+    public class MealTime
     {
         public string Name { get; set; }
         public List<Product> Products { get; set; }
@@ -13,6 +13,12 @@ namespace Business_Layer
         {
             this.Name = name;
             this.Products = new List<Product>();
+        }
+
+        public MealTime(string name, List<Product> products)
+        {
+            this.Name = name;
+            this.Products = Products;
         }
 
         public double GetCalories()

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer
 {
-    class DailyRation
+    public class DailyRation
     {
         public Dictionary<string, MealTime> MealTimes { get; set; }
 

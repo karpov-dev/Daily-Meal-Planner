@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Db>
+ <Category name="Алкоголь">
+  <Product>
+    <Name>Бренди 40% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>0,50</Carbs>
+    <Calories>225</Calories>
+  </Product>
+  <Product>
+    <Name>Вермут 13% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>15,90</Carbs>
+    <Calories>158</Calories>
+    </Product>
+  <Product>
+    <Name>Вино белое 10% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>4,50</Carbs>
+    <Calories>66</Calories>
+   </Product>
+  <Product>
+    <Name>Вино белое 12.5% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>4,00</Carbs>
+    <Calories>78</Calories>
+   </Product>
+  <Product>
+    <Name>Вино белое сладкое 12% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>2,30</Carbs>
+    <Calories>98</Calories>
+      </Product>
+  <Product>
+    <Name>Вино белое сладкое 13.5%алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>5,90</Carbs>
+    <Calories>98</Calories>
+     </Product>
+  <Product>
+    <Name>Вино белое сухое 12% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>2,30</Carbs>
+    <Calories>66</Calories>
+    </Product>
+  <Product>
+    <Name>Вино красное 12% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>2,30</Carbs>
+    <Calories>76</Calories>
+     </Product>
+  <Product>
+    <Name>Виски 40% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>0,00</Carbs>
+    <Calories>220</Calories>
+     </Product>
+  <Product>
+    <Name>Водка 40% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>0,10</Carbs>
+    <Calories>235</Calories>
+     </Product>
+  <Product>
+    <Name>Джин 40% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>0,00</Carbs>
+    <Calories>220</Calories>
+     </Product>
+  <Product>
+    <Name>Коньяк 40%</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>70,00</Carbs>
+    <Calories>239</Calories>
+     </Product>
+  <Product>
+    <Name>Ликер 24% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>53,00</Carbs>
+    <Calories>345</Calories>
+     </Product>
+  <Product>
+    <Name>Мадера 18% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>10,00</Carbs>
+    <Calories>139</Calories>
+     </Product>
+  <Product>
+    <Name>Пиво 1.8% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,20</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>4,30</Carbs>
+    <Calories>29</Calories>
+      </Product>
+  <Product>
+    <Name>Пиво 2.8% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,40</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>4,40</Carbs>
+    <Calories>34</Calories>
+     </Product>
+  <Product>
+    <Name>Пиво 4.5% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,60</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>10,60</Carbs>
+    <Calories>44,8</Calories>
+     </Product>
+  <Product>
+    <Name>Пиво 4.5% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,60</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>3,80</Carbs>
+    <Calories>45</Calories>
+      </Product>
+  <Product>
+    <Name>Портвейн 20%алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>13,70</Carbs>
+    <Calories>167</Calories>
+     </Product>
+  <Product>
+    <Name>Пунш 26% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>30,00</Carbs>
+    <Calories>260</Calories>
+     </Product>
+  <Product>
+    <Name>Ром 40% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>0,00</Carbs>
+    <Calories>220</Calories>
+      </Product>
+  <Product>
+    <Name>Шерри 20% алкоголя</Name>
+    <Gramms>100</Gramms>
+    <Protein>0,00</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>10,00</Carbs>
+    <Calories>152</Calories>
+     </Product>
+  </Category>
+  <Category name="Грибы">
+  <Product>
+    <Name>Белые грибы</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,70</Protein>
+    <Fats>1,70</Fats>
+    <Carbs>1,10</Carbs>
+    <Calories>23</Calories>
+
+  </Product>
+  <Product>
+    <Name>Белые грибы сушеные</Name>
+    <Gramms>100</Gramms>
+    <Protein>20,10</Protein>
+    <Fats>4,80</Fats>
+    <Carbs>7,60</Carbs>
+    <Calories>152</Calories>
+
+  </Product>
+  <Product>
+    <Name>Грибы ассорти "Грибное лукошко"</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,90</Protein>
+    <Fats>1,00</Fats>
+    <Carbs>1,10</Carbs>
+    <Calories>25</Calories>
+
+  </Product>
+  <Product>
+    <Name>Грузди</Name>
+    <Gramms>100</Gramms>
+    <Protein>1,80</Protein>
+    <Fats>0,80</Fats>
+    <Carbs>0,50</Carbs>
+    <Calories>16</Calories>
+    </Product>
+  <Product>
+    <Name>Лисички</Name>
+    <Gramms>100</Gramms>
+    <Protein>1,60</Protein>
+    <Fats>1,10</Fats>
+    <Carbs>1,50</Carbs>
+    <Calories>20</Calories>
+
+  </Product>
+  <Product>
+    <Name>Маслята</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,40</Protein>
+    <Fats>0,70</Fats>
+    <Carbs>0,50</Carbs>
+    <Calories>9</Calories>
+
+  </Product>
+  <Product>
+    <Name>Опята</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,20</Protein>
+    <Fats>1,20</Fats>
+    <Carbs>0,50</Carbs>
+    <Calories>17</Calories>
+
+  </Product>
+  <Product>
+    <Name>Подберезовики</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,30</Protein>
+    <Fats>0,90</Fats>
+    <Carbs>1,40</Carbs>
+    <Calories>23</Calories>
+
+  </Product>
+  <Product>
+    <Name>Подберезовики сушеные</Name>
+    <Gramms>100</Gramms>
+    <Protein>23,50</Protein>
+    <Fats>9,20</Fats>
+    <Carbs>14,30</Carbs>
+    <Calories>231</Calories>
+
+  </Product>
+  <Product>
+    <Name>Подосиновики</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,30</Protein>
+    <Fats>0,50</Fats>
+    <Carbs>1,20</Carbs>
+    <Calories>22</Calories>
+
+  </Product>
+  <Product>
+    <Name>Подосиновики сушеные</Name>
+    <Gramms>100</Gramms>
+    <Protein>35,40</Protein>
+    <Fats>5,40</Fats>
+    <Carbs>12,90</Carbs>
+    <Calories>239</Calories>
+
+  </Product>
+  <Product>
+    <Name>Рыжики</Name>
+    <Gramms>100</Gramms>
+    <Protein>1,90</Protein>
+    <Fats>0,80</Fats>
+    <Carbs>0,50</Carbs>
+    <Calories>17</Calories>
+
+  </Product>
+  <Product>
+    <Name>Сморчки</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,90</Protein>
+    <Fats>0,40</Fats>
+    <Carbs>0,20</Carbs>
+    <Calories>16</Calories>
+   </Product>
+  <Product>
+    <Name>Сыроежки</Name>
+    <Gramms>100</Gramms>
+    <Protein>1,70</Protein>
+    <Fats>0,70</Fats>
+    <Carbs>1,50</Carbs>
+    <Calories>15</Calories>
+   </Product>
+  <Product>
+    <Name>Шампиньоны</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,80</Protein>
+    <Fats>0,20</Fats>
+    <Carbs>3,80</Carbs>
+    <Calories>34</Calories>
+    </Product>
+   </Category>
+   <Category name="Каши, крупы">
+  <Product>
+    <Name>Геркулес</Name>
+    <Gramms>100</Gramms>
+    <Protein>11,00</Protein>
+    <Fats>6,20</Fats>
+    <Carbs>50,10</Carbs>
+    <Calories>305</Calories>
+
+  </Product>
+  <Product>
+    <Name>Горох сушеный</Name>
+    <Gramms>100</Gramms>
+    <Protein>20,50</Protein>
+    <Fats>2,00</Fats>
+    <Carbs>48,60</Carbs>
+    <Calories>298</Calories>
+
+  </Product>
+  <Product>
+    <Name>Гречневая каша (Myllyn Paras)</Name>
+    <Gramms>100</Gramms>
+    <Protein>13,00</Protein>
+    <Fats>1,70</Fats>
+    <Carbs>67,50</Carbs>
+    <Calories>340</Calories>
+
+  </Product>
+  <Product>
+    <Name>Гречневая крупа Мистраль</Name>
+    <Gramms>100</Gramms>
+    <Protein>13,60</Protein>
+    <Fats>3,30</Fats>
+    <Carbs>65,00</Carbs>
+    <Calories>347</Calories>
+
+  </Product>
+  <Product>
+    <Name>Гречневая продел</Name>
+    <Gramms>100</Gramms>
+    <Protein>9,50</Protein>
+    <Fats>2,30</Fats>
+    <Carbs>65,90</Carbs>
+    <Calories>329</Calories>
+
+  </Product>
+  <Product>
+    <Name>Гречневая ядрица</Name>
+    <Gramms>100</Gramms>
+    <Protein>12,60</Protein>
+    <Fats>3,30</Fats>
+    <Carbs>62,10</Carbs>
+    <Calories>335</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша геркулесовая молочная</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,20</Protein>
+    <Fats>4,30</Fats>
+    <Carbs>14,20</Carbs>
+    <Calories>105</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша геркулесовая на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,90</Protein>
+    <Fats>1,40</Fats>
+    <Carbs>14,80</Carbs>
+    <Calories>84</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша гречневая вязкая на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,20</Protein>
+    <Fats>0,80</Fats>
+    <Carbs>17,10</Carbs>
+    <Calories>90</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша гречневая рассыпчатая</Name>
+    <Gramms>100</Gramms>
+    <Protein>5,90</Protein>
+    <Fats>1,60</Fats>
+    <Carbs>30,60</Carbs>
+    <Calories>163</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша манная молочная</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,00</Protein>
+    <Fats>3,20</Fats>
+    <Carbs>15,30</Carbs>
+    <Calories>98</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша манная на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,50</Protein>
+    <Fats>0,20</Fats>
+    <Carbs>16,80</Carbs>
+    <Calories>80</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша овсяная молочная</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,20</Protein>
+    <Fats>4,10</Fats>
+    <Carbs>14,20</Carbs>
+    <Calories>102</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша овсяная на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,00</Protein>
+    <Fats>1,70</Fats>
+    <Carbs>15,00</Carbs>
+    <Calories>88</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша перловая рассыпчатая</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,10</Protein>
+    <Fats>0,40</Fats>
+    <Carbs>23,00</Carbs>
+    <Calories>106</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша пшеничная вязкая на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,20</Protein>
+    <Fats>0,30</Fats>
+    <Carbs>18,70</Carbs>
+    <Calories>92</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша пшеничная рассыпчатая</Name>
+    <Gramms>100</Gramms>
+    <Protein>5,00</Protein>
+    <Fats>0,40</Fats>
+    <Carbs>27,70</Carbs>
+    <Calories>137</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша пшенная вязкая на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,00</Protein>
+    <Fats>0,70</Fats>
+    <Carbs>17,00</Carbs>
+    <Calories>90</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша пшенная рассыпчатая</Name>
+    <Gramms>100</Gramms>
+    <Protein>4,70</Protein>
+    <Fats>1,10</Fats>
+    <Carbs>26,10</Carbs>
+    <Calories>135</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша рисовая молочная</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,50</Protein>
+    <Fats>3,10</Fats>
+    <Carbs>16,00</Carbs>
+    <Calories>97</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша рисовая на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>1,50</Protein>
+    <Fats>0,10</Fats>
+    <Carbs>17,40</Carbs>
+    <Calories>78</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша ячневая вязкая на воде</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,30</Protein>
+    <Fats>0,30</Fats>
+    <Carbs>15,70</Carbs>
+    <Calories>76</Calories>
+
+  </Product>
+  <Product>
+    <Name>Каша ячневая рассыпчатая</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,40</Protein>
+    <Fats>0,40</Fats>
+    <Carbs>22,10</Carbs>
+    <Calories>108</Calories>
+
+  </Product>
+  <Product>
+    <Name>Коричневый рис</Name>
+    <Gramms>100</Gramms>
+    <Protein>6,30</Protein>
+    <Fats>4,40</Fats>
+    <Carbs>65,10</Carbs>
+    <Calories>331</Calories>
+
+  </Product>
+  <Product>
+    <Name>Крупа кукурузная</Name>
+    <Gramms>100</Gramms>
+    <Protein>8,30</Protein>
+    <Fats>1,20</Fats>
+    <Carbs>71,60</Carbs>
+    <Calories>337</Calories>
+
+  </Product>
+  <Product>
+    <Name>Крупа манная</Name>
+    <Gramms>100</Gramms>
+    <Protein>10,30</Protein>
+    <Fats>1,00</Fats>
+    <Carbs>67,70</Carbs>
+    <Calories>328</Calories>
+
+  </Product>
+  <Product>
+    <Name>Крупа перловая</Name>
+    <Gramms>100</Gramms>
+    <Protein>9,30</Protein>
+    <Fats>1,10</Fats>
+    <Carbs>66,50</Carbs>
+    <Calories>320</Calories>
+
+  </Product>
+  <Product>
+    <Name>Кукуруза дробленая</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,40</Protein>
+    <Fats>0,50</Fats>
+    <Carbs>14,60</Carbs>
+    <Calories>72</Calories>
+
+  </Product>
+  <Product>
+    <Name>Кукуруза целыми зернами</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,20</Protein>
+    <Fats>0,40</Fats>
+    <Carbs>11,20</Carbs>
+    <Calories>58</Calories>
+
+  </Product>
+  <Product>
+    <Name>Кукурузные зерна</Name>
+    <Gramms>100</Gramms>
+    <Protein>3,00</Protein>
+    <Fats>0,80</Fats>
+    <Carbs>0,00</Carbs>
+    <Calories>103</Calories>
+
+  </Product>
+  <Product>
+    <Name>Нут сушеный</Name>
+    <Gramms>100</Gramms>
+    <Protein>20,10</Protein>
+    <Fats>4,30</Fats>
+    <Carbs>46,40</Carbs>
+    <Calories>309</Calories>
+
+  </Product>
+  <Product>
+    <Name>Овсяная крупа</Name>
+    <Gramms>100</Gramms>
+    <Protein>11,00</Protein>
+    <Fats>6,10</Fats>
+    <Carbs>49,70</Carbs>
+    <Calories>303</Calories>
+
+  </Product>
+  <Product>
+    <Name>Пшеничная каша (Myllyn Paras)</Name>
+    <Gramms>100</Gramms>
+    <Protein>13,00</Protein>
+    <Fats>2,00</Fats>
+    <Carbs>62,50</Carbs>
+    <Calories>325</Calories>
+
+  </Product>
+  <Product>
+    <Name>Пшенная каша (Myllyn Paras)</Name>
+    <Gramms>100</Gramms>
+    <Protein>11,20</Protein>
+    <Fats>3,90</Fats>
+    <Carbs>55,30</Carbs>
+    <Calories>305</Calories>
+
+  </Product>
+  <Product>
+    <Name>Пшено</Name>
+    <Gramms>100</Gramms>
+    <Protein>11,50</Protein>
+    <Fats>3,30</Fats>
+    <Carbs>66,50</Carbs>
+    <Calories>348</Calories>
+
+  </Product>
+  <Product>
+    <Name>Рис коричневый</Name>
+    <Gramms>100</Gramms>
+    <Protein>6,30</Protein>
+    <Fats>4,40</Fats>
+    <Carbs>65,10</Carbs>
+    <Calories>331</Calories>
+
+  </Product>
+  <Product>
+    <Name>Рис полированный</Name>
+    <Gramms>100</Gramms>
+    <Protein>7,00</Protein>
+    <Fats>1,00</Fats>
+    <Carbs>71,40</Carbs>
+    <Calories>330</Calories>
+
+  </Product>
+  <Product>
+    <Name>Рис рассыпчатый (т.е. вареный)</Name>
+    <Gramms>100</Gramms>
+    <Protein>2,40</Protein>
+    <Fats>0,20</Fats>
+    <Carbs>24,90</Carbs>
+    <Calories>113</Calories>
+
+  </Product>
+  <Product>
+    <Name>Рис черный Мистраль</Name>
+    <Gramms>100</Gramms>
+    <Protein>14,00</Protein>
+    <Fats>0,50</Fats>
+    <Carbs>72,00</Carbs>
+    <Calories>349</Calories>
+
+  </Product>
+  <Product>
+    <Name>Хлопья ржаные, ячменные</Name>
+    <Gramms>100</Gramms>
+    <Protein>10,15</Protein>
+    <Fats>1,45</Fats>
+    <Carbs>71,30</Carbs>
+    <Calories>321</Calories>
+
+  </Product>
+  <Product>
+    <Name>Четырехзерновая каша (Myllyn Paras)</Name>
+    <Gramms>100</Gramms>
+    <Protein>11,70</Protein>
+    <Fats>2,80</Fats>
+    <Carbs>61,40</Carbs>
+    <Calories>317,6</Calories>
+
+  </Product>
+  <Product>
+    <Name>Чечевица вареная</Name>
+    <Gramms>100</Gramms>
+    <Protein>7,80</Protein>
+    <Fats>0,00</Fats>
+    <Carbs>20,10</Carbs>
+    <Calories>110</Calories>
+
+  </Product>
+  <Product>
+    <Name>Чечевица красная (Muller's Muhle)</Name>
+    <Gramms>100</Gramms>
+    <Protein>24,40</Protein>
+    <Fats>1,10</Fats>
+    <Carbs>44,40</Carbs>
+    <Calories>285,1</Calories>
+
+  </Product>
+  <Product>
+    <Name>Ячневая крупа</Name>
+    <Gramms>100</Gramms>
+    <Protein>10,00</Protein>
+    <Fats>1,30</Fats>
+    <Carbs>66,30</Carbs>
+    <Calories>324</Calories>
+
+  </Product>
+  <Product>
+    <Name>турецкий горох (Muller's Muhle)</Name>
+    <Gramms>100</Gramms>
+    <Protein>19,80</Protein>
+    <Fats>3,40</Fats>
+    <Carbs>41,20</Carbs>
+    <Calories>275</Calories>
+
+  </Product>
+  <Product>
+    <Name>фасоль белая в том. соусе (бондюэль)</Name>
+    <Gramms>100</Gramms>
+    <Protein>10,47</Protein>
+    <Fats>0,52</Fats>
+    <Carbs>32,14</Carbs>
+    <Calories>170</Calories>
+
+  </Product>
+  <Product>
+    <Name>фасоль сушеная</Name>
+    <Gramms>100</Gramms>
+    <Protein>21,00</Protein>
+    <Fats>2,00</Fats>
+    <Carbs>49,00</Carbs>
+    <Calories>298</Calories>
+
+  </Product>
+  </Category>
+</Db>
+
+
+

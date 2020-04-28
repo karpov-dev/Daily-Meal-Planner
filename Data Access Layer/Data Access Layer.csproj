@@ -6,4 +6,8 @@
     <RootNamespace>Data_Access_Layer</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\Business Layer.csproj" />
+  </ItemGroup>
+
 </Project>

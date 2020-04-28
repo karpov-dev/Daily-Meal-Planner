@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Business_Layer
 {
-    class Product : ICloneable
+    public class Product : ICloneable
     {
         public string Name { get; set; }
         public string Description { get; set; }
         public double Gramms { get; set; }
         public double Fats { get; set; }
         public double Carbs { get; set; }
+        public double Protein { get; set; }
         public double Calories100 { get; set; }
-        public Category Category { get; set; }
 
         public Product() { }
         public Product(Product product)
@@ -22,8 +22,8 @@ namespace Business_Layer
             this.Gramms = product.Gramms;
             this.Fats = product.Fats;
             this.Carbs = product.Carbs;
-            this.Category = product.Category;
             this.Calories100 = product.Calories100;
+            this.Protein = product.Protein;
         }
 
         public double GetCalories() => ( Gramms * Calories100 ) / 100;

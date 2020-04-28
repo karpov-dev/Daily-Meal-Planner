@@ -6,4 +6,10 @@
     <RootNamespace>Service_Layer</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\Business Layer.csproj" />
+    <ProjectReference Include="..\DailyMealPlanner\Presentation Layer.csproj" />
+    <ProjectReference Include="..\Data Access Layer\Data Access Layer.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -55,7 +55,54 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Service\ModelPropertyChanged.cs" />
+    <Compile Include="Service\RelayCommand.cs" />
+    <Compile Include="ViewModel\Components\CategoriesCMPVM.cs" />
+    <Compile Include="ViewModel\Components\CategoriesTableCMPVM.cs" />
+    <Compile Include="ViewModel\Components\MealTimeEditorVM.cs" />
+    <Compile Include="ViewModel\Components\ProductsViewCMPVM.cs" />
+    <Compile Include="ViewModel\Components\UserInfoCMPVM.cs" />
+    <Compile Include="ViewModel\MainWindowVM.cs" />
+    <Compile Include="View\Components\CategoriesCMP.xaml.cs">
+      <DependentUpon>CategoriesCMP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Components\CategoriesTableCMP.xaml.cs">
+      <DependentUpon>CategoriesTableCMP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Components\MealTimeEditor.xaml.cs">
+      <DependentUpon>MealTimeEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Components\ProductsViewCMP.xaml.cs">
+      <DependentUpon>ProductsViewCMP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Components\UserInfoCMP.xaml.cs">
+      <DependentUpon>UserInfoCMP.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ResourceDictionary\StyleDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Components\CategoriesCMP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Components\CategoriesTableCMP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Components\MealTimeEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Components\ProductsViewCMP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Components\UserInfoCMP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,7 +110,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -94,5 +141,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
