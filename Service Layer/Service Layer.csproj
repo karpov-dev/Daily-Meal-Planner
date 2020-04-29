@@ -1,14 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>Service_Layer</RootNamespace>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Business Layer\Business Layer.csproj" />
-    <ProjectReference Include="..\DailyMealPlanner\Presentation Layer.csproj" />
     <ProjectReference Include="..\Data Access Layer\Data Access Layer.csproj" />
   </ItemGroup>
 

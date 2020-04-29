@@ -14,13 +14,13 @@ namespace Data_Access_Layer
         public List<Category> Categories { get; set; }
         public User User { get; set; }
 
-        public DataBase(string dataPath)
+        public DataBase(string dataPath = null)
         {
             if ( DataBase.DataPath == null )
             {
-                DataPath = "products.xml";
+                dataPath = "products.xml";
             }
-            DataBase.DataPath = dataPath;
+            DataPath = dataPath;
             Categories = new List<Category>();
             User = new User();
             ReadData(dataPath);
@@ -30,7 +30,8 @@ namespace Data_Access_Layer
         {
             if(instance == null )
             {
-                return new DataBase(DataPath);
+                instance = new DataBase();
+                return instance;
             }
             else
             {
@@ -60,8 +61,7 @@ namespace Data_Access_Layer
             {
                 Category xmlCategory = new Category()
                 {
-                    Name = category.Attribute("name").Value,
-                    Description = category.Attribute("description").Value,
+                    Name = category.Attribute("name").Value
                 };
                 List<Product> xmlProducts = new List<Product>();
                 foreach(XElement product in category.Elements("Product") )

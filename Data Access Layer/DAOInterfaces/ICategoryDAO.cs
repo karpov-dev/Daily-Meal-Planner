@@ -9,9 +9,10 @@ namespace Data_Access_Layer.DAOInterfaces
     {
 
         public Category GetByName(string name);
-        public bool Add(Category category);
-        public bool Remove(Category category);
-        public bool Update(Category oldVersion, Category newVersion);
+        public List<Product> GetProductsByName(string name);
+        public List<Category> GetCategories();
+        public List<Category> Remove(Category category);
+        public bool Upsert(Category oldVersion, Category newVersion);
 
     }
 }

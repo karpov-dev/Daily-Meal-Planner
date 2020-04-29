@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="PresentationLayer.View.Components.UserInfoCmp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:PresentationLayer.ViewModel.Components"
+             xmlns:i= "clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:local="clr-namespace:PresentationLayer.View.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <StackPanel Background="AliceBlue">
+        <TextBlock Text="Пользователь" 
+                   Style="{StaticResource PageTitile}"/>
+        <DockPanel Background="AliceBlue">
+            <TextBlock Text="Вес: " 
+                       Style="{StaticResource MenuPointTitle}"/>
+            <TextBox Text="{Binding Weight}"
+                     MaxLength="3"/>
+        </DockPanel>
+        <DockPanel Background="AliceBlue">
+            <TextBlock Text="Рост: "
+                       Style="{StaticResource MenuPointTitle}"/>
+            <TextBox Text="{Binding Height}"
+                     MaxLines="3"/>
+        </DockPanel>
+        <DockPanel Background="AliceBlue">
+            <TextBlock Text="Возраст: "
+                       Style="{StaticResource MenuPointTitle}"/>
+            <TextBox Text="{Binding Age}"
+                     MaxLines="2"/>
+        </DockPanel>
+        <StackPanel Background="AntiqueWhite">
+            <TextBlock Text="BMR: "
+                       Style="{StaticResource MenuPointTitleCenter}"/>
+            <TextBlock Text="{Binding BMR}"
+                       Style="{StaticResource MenuPointTitleCenter}"/>
+        </StackPanel>
+        <StackPanel Background="AliceBlue">
+            <TextBlock Text="ARM: "
+                       Style="{StaticResource MenuPointTitleCenter}"/>
+            <TextBlock Text="{Binding ARM}"
+                       Style="{StaticResource MenuPointTitleCenter}"/>
+        </StackPanel>
+        <StackPanel Background="AntiqueWhite">
+            <TextBlock Text="кКалл: "
+                       Style="{StaticResource MenuPointTitleCenter}"/>
+            <TextBlock Text="{Binding Calories}"
+                       Style="{StaticResource MenuPointTitleCenter}"/>
+        </StackPanel>
+    </StackPanel>
+    
+    
+</UserControl>

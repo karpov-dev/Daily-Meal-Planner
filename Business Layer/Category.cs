@@ -23,7 +23,13 @@ namespace Business_Layer
 
         public object Clone()
         {
-            return this.MemberwiseClone();
+            Category clonedCategory = (Category)MemberwiseClone();
+            clonedCategory.Products = new List<Product>();
+            for (int i = 0; i < Products.Count; i++ )
+            {
+                clonedCategory.Products.Add((Product)Products[i].Clone());
+            }
+            return clonedCategory;
         }
     }
 }

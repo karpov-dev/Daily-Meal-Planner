@@ -7,7 +7,6 @@ namespace Business_Layer
     public class Product : ICloneable
     {
         public string Name { get; set; }
-        public string Description { get; set; }
         public double Gramms { get; set; }
         public double Fats { get; set; }
         public double Carbs { get; set; }
@@ -18,7 +17,6 @@ namespace Business_Layer
         public Product(Product product)
         {
             this.Name = product.Name;
-            this.Description = product.Description;
             this.Gramms = product.Gramms;
             this.Fats = product.Fats;
             this.Carbs = product.Carbs;

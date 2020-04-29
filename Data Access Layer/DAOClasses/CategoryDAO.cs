@@ -10,16 +10,6 @@ namespace Data_Access_Layer.DAOClasses
     {
         private DataBase _dataBase = DataBase.GetInstance();
 
-        public bool Add(Category category)
-        {
-            if(category != null )
-            {
-                _dataBase.Categories.Add(category);
-                return true;
-            }
-            return false;
-        }
-
         public Category GetByName(string name)
         {
             if( !string.IsNullOrWhiteSpace(name) )
@@ -36,29 +26,56 @@ namespace Data_Access_Layer.DAOClasses
             return null;
         }
 
-        public bool Remove(Category category)
+        public List<Category> GetCategories()
+        {
+            return _dataBase.Categories;
+        }
+
+        public List<Product> GetProductsByName(string name)
+        {
+            if( !string.IsNullOrWhiteSpace(name) )
+            {
+                List<Category> categories = _dataBase.Categories;
+                for(int i = 0; i < categories.Count; i++ )
+                {
+                    if(categories[i].Name == name )
+                    {
+                        return categories[i].Products;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public List<Category> Remove(Category category)
         {
             if(category != null )
             {
                 _dataBase.Categories.Remove(category);
-                return true;
             }
-            return true;
+            return _dataBase.Categories;
         }
 
-        public bool Update(Category oldVersion, Category newVersion)
+        public bool Upsert(Category oldVersion, Category newVersion)
         {
-            if( oldVersion != null && newVersion != null )
+            if ( newVersion == null ) return false;
+
+            Category category = null;
+            if (oldVersion != null )
             {
-                Category category = GetByName(oldVersion.Name);
-                if(category != null )
-                {
-                    Remove(oldVersion);
-                    Add(newVersion);
-                    return true;
-                }
+                category = GetByName(oldVersion.Name);
             }
-            return false;
+            
+            if(category == null )
+            {
+                _dataBase.Categories.Add(newVersion);
+            }
+            else
+            {
+                category.Products = newVersion.Products;
+                category = newVersion;
+            }
+            return true;
         }
     }
 }

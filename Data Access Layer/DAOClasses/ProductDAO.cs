@@ -93,5 +93,16 @@ namespace Data_Access_Layer.DAOClasses
             }
             return null;
         }
+
+        public List<Product> GetProducts()
+        {
+            List<Category> categories = _dataBase.Categories;
+            List<Product> productList = new List<Product>();
+            for(int i = 0; i < categories.Count; i++ )
+            {
+                productList.AddRange(categories[i].Products);
+            }
+            return productList;
+        }
     }
 }
