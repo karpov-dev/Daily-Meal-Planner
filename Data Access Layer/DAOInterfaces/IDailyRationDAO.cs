@@ -8,11 +8,11 @@ namespace Data_Access_Layer.DAOInterfaces
     public interface IDailyRationDAO
     {
 
-        public Dictionary<string, MealTime> GetMealTimes();
-        public List<Product> GetMealTimeProducts(string name);
-        public bool Add(MealTime mealTime);
-        public bool Remove(MealTime mealTime);
-        public bool Update(MealTime oldVersion, MealTime newVersion);
-        public MealTime GetMealTimeByName(string name);
+        public void InsertMealTime(MealTime mealTime);
+        public void RemoveMealTime(MealTime mealTime);
+        public List<MealTime> Get();
+        public void RemoveProduct(MealTime mealTime, Product product);
+        public void InsertProduct(MealTime mealTime, Product product);
+
     }
 }

@@ -1,0 +1,23 @@
+﻿<Window x:Class="PresentationLayer.View.Windows.AddMealTime"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:PresentationLayer.ViewModel.Windows"
+        xmlns:local="clr-namespace:PresentationLayer.View.Windows"
+        mc:Ignorable="d"
+        Title="Добавить приём пищи" Height="130" Width="220" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    
+    <Window.DataContext>
+        <vm:AddMealTimeVm/>
+    </Window.DataContext>
+
+    <StackPanel>
+        <TextBlock Text="Название"
+                   Style="{StaticResource PageTitile}"/>
+        <TextBox Text="{Binding MealTimeName, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Content="Сохранить"
+                Command="{Binding AddMealTime}"
+                IsEnabled="{Binding SaveIsEnabled}"/>
+    </StackPanel>
+</Window>

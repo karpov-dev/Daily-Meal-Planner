@@ -12,17 +12,17 @@ namespace Data_Access_Layer.DAOClasses
 
         public Category GetByName(string name)
         {
-            if( !string.IsNullOrWhiteSpace(name) )
+            if ( string.IsNullOrWhiteSpace(name) ) return null;
+
+            List<Category> categories = _dataBase.Categories;
+            foreach ( Category category in categories )
             {
-                List<Category> categories = _dataBase.Categories;
-                foreach(Category category in categories )
+                if ( category.Name == name )
                 {
-                    if(category.Name == name )
-                    {
-                        return category;
-                    }
+                    return category;
                 }
             }
+
             return null;
         }
 
@@ -33,32 +33,30 @@ namespace Data_Access_Layer.DAOClasses
 
         public List<Product> GetProductsByName(string name)
         {
-            if( !string.IsNullOrWhiteSpace(name) )
+            if( string.IsNullOrWhiteSpace(name) ) return null;
+
+            List<Category> categories = _dataBase.Categories;
+            for ( int i = 0; i < categories.Count; i++ )
             {
-                List<Category> categories = _dataBase.Categories;
-                for(int i = 0; i < categories.Count; i++ )
+                if ( categories[i].Name == name )
                 {
-                    if(categories[i].Name == name )
-                    {
-                        return categories[i].Products;
-                    }
+                    return categories[i].Products;
                 }
             }
+
             return null;
         }
 
-        public List<Category> Remove(Category category)
+        public void Remove(Category category)
         {
-            if(category != null )
-            {
-                _dataBase.Categories.Remove(category);
-            }
-            return _dataBase.Categories;
+            if ( category == null ) return;
+
+            _dataBase.Categories.Remove(category);
         }
 
-        public bool Upsert(Category oldVersion, Category newVersion)
+        public void Upsert(Category oldVersion, Category newVersion)
         {
-            if ( newVersion == null ) return false;
+            if ( newVersion == null ) return;
 
             Category category = null;
             if (oldVersion != null )
@@ -73,9 +71,9 @@ namespace Data_Access_Layer.DAOClasses
             else
             {
                 category.Products = newVersion.Products;
+                category.Name = newVersion.Name;
                 category = newVersion;
             }
-            return true;
         }
     }
 }

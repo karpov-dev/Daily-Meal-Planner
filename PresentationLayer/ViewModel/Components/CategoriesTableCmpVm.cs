@@ -1,10 +1,12 @@
 ﻿using Business_Layer;
 using Service_Layer;
 using PresentationLayer.Service;
-using PresentationLayer.ViewModel.Windows;
+using PresentationLayer.Model;
 using PresentationLayer.View.Windows;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace PresentationLayer.ViewModel.Components
 {
@@ -45,6 +47,15 @@ namespace PresentationLayer.ViewModel.Components
                 OnPropertyChanged("Products");
             }
         }
+        public Product SelectedProduct
+        {
+            get => InteractionCmp.SelectedProduct;
+            set
+            {
+                InteractionCmp.SelectedProduct = value;
+                OnPropertyChanged();
+            }
+        }
 
         public RelayCommand AddCategory => _addCategory ?? ( _addCategory = new RelayCommand(obj =>
          {
@@ -65,7 +76,6 @@ namespace PresentationLayer.ViewModel.Components
              OnPropertyChanged("Categories");
          }) );
 
-        
         private Category GetDefaultCategory()
         {
             if(Categories != null && Categories.Count > 0 )

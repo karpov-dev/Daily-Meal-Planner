@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:vm="clr-namespace:PresentationLayer.ViewModel.Components"
              xmlns:local="clr-namespace:PresentationLayer.View.Components"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
@@ -45,7 +46,7 @@
                     Grid.Column="2"
                     Command="{Binding DeleteCategory}"/>
         </Grid>
-        <ListView Grid.Row="3" ItemsSource="{Binding Products}" Margin="5">
+        <ListView Grid.Row="3" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}" Margin="5">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Название"

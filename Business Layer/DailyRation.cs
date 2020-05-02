@@ -6,22 +6,22 @@ namespace Business_Layer
 {
     public class DailyRation
     {
-        public Dictionary<string, MealTime> MealTimes { get; set; }
+        public List<MealTime> MealTimes { get; set; }
 
         public DailyRation()
         {
-            MealTimes = new Dictionary<string, MealTime>();
-            MealTimes["Завтрак"] = new MealTime("Завтрак");
-            MealTimes["Обед"] = new MealTime("Обед");
-            MealTimes["Ужин"] = new MealTime("Ужин");
+            MealTimes = new List<MealTime>();
+            MealTimes.Add( new MealTime("Завтрак") );
+            MealTimes.Add( new MealTime("Обед") );
+            MealTimes.Add( new MealTime("Ужин") );
 
         }
 
         public double GetCalories()
         {
             double calories = 0;
-            foreach(string name in MealTimes.Keys){
-                calories += MealTimes[name].GetCalories();
+            foreach(MealTime mealTime in MealTimes){
+                calories += mealTime.GetCalories();
             }
             return calories;
         }

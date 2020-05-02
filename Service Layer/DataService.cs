@@ -32,18 +32,17 @@ namespace Service_Layer
         public bool UpdateProdut(string categoryName, Product oldVersion, Product newVersion) => productDAO.Update(categoryName, oldVersion, newVersion);
 
         //deilyRation service
-        public Dictionary<string, MealTime> GetMealsTimes() => dailyRationDAO.GetMealTimes();
-        public List<Product> GetMealTimeProducts(string name) => dailyRationDAO.GetMealTimeProducts(name);
-        public bool AddMealTime(MealTime mealTime) => dailyRationDAO.Add(mealTime);
-        public bool RemoveMealTime(MealTime mealTime) => dailyRationDAO.Remove(mealTime);
-        public bool UpdateMealTime(MealTime oldVersion, MealTime newVersion) => dailyRationDAO.Update(oldVersion, newVersion);
-        public MealTime GetMealTimeByName(string name) => dailyRationDAO.GetMealTimeByName(name);
+        public void InsertMealTime(MealTime mealTime) => dailyRationDAO.InsertMealTime(mealTime);
+        public void RemoveMealTime(MealTime mealTime) => dailyRationDAO.RemoveMealTime(mealTime);
+        public void RemoveMealTimeProduct(MealTime mealTimem, Product product) => dailyRationDAO.RemoveProduct(mealTimem, product);
+        public void InsertMealTimeProduct(MealTime mealTime, Product product) => dailyRationDAO.InsertProduct(mealTime, product);
+        public List<MealTime> GetMealTimes() => dailyRationDAO.Get();
 
         //category service
         public Category GetCategoryByName(string name) => categoryDAO.GetByName(name);
         public List<Category> GetCategories() => categoryDAO.GetCategories();
-        public bool UpsertCategory(Category oldVersion, Category newVersion) => categoryDAO.Upsert(oldVersion, newVersion);
-        public List<Category> RemoveCategory(Category category) => categoryDAO.Remove(category);
+        public void UpsertCategory(Category oldVersion, Category newVersion) => categoryDAO.Upsert(oldVersion, newVersion);
+        public void RemoveCategory(Category category) => categoryDAO.Remove(category);
 
         //user service
         public User GetUser() => userDAO.GetUser();

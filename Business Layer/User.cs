@@ -81,5 +81,15 @@ namespace Business_Layer
             }
         }
         public double GetCalories() => Math.Round( GetBMR() * GetARM(), 2);
+        public List<string> GetActivities()
+        {
+            return new List<string>()
+            {
+                "Низкая",
+                "Средняя",
+                "Выше средней",
+                "Высокая"
+            };
+        }
     }
 }

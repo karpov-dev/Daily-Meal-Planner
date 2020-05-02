@@ -6,7 +6,7 @@
         xmlns:vm="clr-namespace:PresentationLayer.ViewModel.Windows"
         xmlns:local="clr-namespace:PresentationLayer.View.Windows"
         mc:Ignorable="d"
-        Title="Редактор категорий продуктов" Height="600" Width="500">
+        Title="Редактор категорий продуктов" Height="600" Width="500" WindowStartupLocation="CenterScreen">
 
     <Grid Margin="5">
         <Grid.RowDefinitions>
@@ -23,7 +23,7 @@
                 <TextBlock Text="Название"
                            Style="{StaticResource MenuPointTitle}"/>
                 <TextBox Text="{Binding Name}"
-                         DataContext="{Binding Category}"/>
+                         DataContext="{Binding Category, UpdateSourceTrigger=PropertyChanged}"/>
             </DockPanel>
             <TextBlock Text="Связанные продукты"
                        Style="{StaticResource PageTitile}"/>

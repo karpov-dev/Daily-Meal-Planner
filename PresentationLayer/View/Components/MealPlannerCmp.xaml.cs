@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace PresentationLayer.View.Components
 {
     /// <summary>
-    /// Логика взаимодействия для UserInfoCmp.xaml
+    /// Логика взаимодействия для MealPlannerCmp.xaml
     /// </summary>
-    public partial class UserInfoCmp : UserControl
+    public partial class MealPlannerCmp : UserControl
     {
-        public UserInfoCmp()
+        public MealPlannerCmp()
         {
             InitializeComponent();
         }

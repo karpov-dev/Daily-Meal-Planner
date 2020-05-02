@@ -10,70 +10,37 @@ namespace Data_Access_Layer.DAOClasses
     {
         private DataBase _dataBase = DataBase.GetInstance();
 
-        public bool Add(MealTime mealTime)
-        {
-            if(mealTime != null )
-            {
-                _dataBase.User.DailyRation.MealTimes.Add(mealTime.Name, mealTime);
-                return true;
-            }
-            return false;
-        }
-
-        public MealTime GetMealTimeByName(string name)
-        {
-            if( !string.IsNullOrWhiteSpace(name) )
-            {
-                if ( _dataBase.User.DailyRation.MealTimes.ContainsKey(name) )
-                {
-                    return _dataBase.User.DailyRation.MealTimes[name];
-                }
-            }
-            return null;
-        }
-
-        public List<Product> GetMealTimeProducts(string name)
-        {
-            if( !string.IsNullOrEmpty(name) )
-            {
-                if ( _dataBase.User.DailyRation.MealTimes.ContainsKey(name) )
-                {
-                    return _dataBase.User.DailyRation.MealTimes[name].Products;
-                }
-            }
-            return null;
-        }
-
-        public Dictionary<string, MealTime> GetMealTimes()
+        public List<MealTime> Get()
         {
             return _dataBase.User.DailyRation.MealTimes;
         }
 
-        public bool Remove(MealTime mealTime)
+        public void InsertMealTime(MealTime mealTime)
         {
-            if(mealTime != null )
-            {
-                if ( _dataBase.User.DailyRation.MealTimes.ContainsKey(mealTime.Name) )
-                {
-                    _dataBase.User.DailyRation.MealTimes.Remove(mealTime.Name);
-                    return true;
-                }
-            }
-            return false;
+            if ( mealTime == null ) return;
+
+            _dataBase.User.DailyRation.MealTimes.Add(mealTime);
         }
 
-        public bool Update(MealTime oldVersion, MealTime newVersion)
+        public void InsertProduct(MealTime mealTime, Product product)
         {
-            if(oldVersion != null && newVersion != null )
-            {
-                if ( _dataBase.User.DailyRation.MealTimes.ContainsKey(oldVersion.Name) )
-                {
-                    _dataBase.User.DailyRation.MealTimes.Remove(oldVersion.Name);
-                    this.Add(newVersion);
-                    return true;
-                }
-            }
-            return false;
+            if ( mealTime == null && product == null ) return;
+
+            mealTime.Products.Add(product);
         }
+
+        public void RemoveMealTime(MealTime mealTime)
+        {
+            if ( mealTime == null ) return;
+
+            _dataBase.User.DailyRation.MealTimes.Remove(mealTime);
+        }
+
+        public void RemoveProduct(MealTime mealTime, Product product)
+        {
+            if ( mealTime == null && product == null ) return;
+
+            mealTime.Products.Remove(product);
+        } 
     }
 }

@@ -11,8 +11,8 @@ namespace Data_Access_Layer.DAOInterfaces
         public Category GetByName(string name);
         public List<Product> GetProductsByName(string name);
         public List<Category> GetCategories();
-        public List<Category> Remove(Category category);
-        public bool Upsert(Category oldVersion, Category newVersion);
+        public void Remove(Category category);
+        public void Upsert(Category oldVersion, Category newVersion);
 
     }
 }

@@ -15,13 +15,18 @@
     
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.2*"/>
-            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="0.4*"/>
         </Grid.ColumnDefinitions>
-        <cmp:UserInfoCmp Grid.Column="0"
-                         DataContext="{Binding UserInfoCmpVm}"/>
-        <cmp:CategoriesTableCmp Grid.Column="1"
+        <cmp:CategoriesTableCmp Grid.Column="0"
                                 DataContext="{Binding CategoriesTableCmpVm}"/>
+        <Button Content="->"
+                Grid.Column="1"
+                Height="100"
+                Width="20"
+                Command="{Binding AddProduct}"/>
+        <cmp:MealPlannerCmp Grid.Column="2"
+                            DataContext="{Binding MealPlannerCmpVm}"/>
     </Grid>
 </Window>
