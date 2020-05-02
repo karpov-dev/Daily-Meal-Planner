@@ -5,6 +5,7 @@ using PresentationLayer.View.Windows;
 using Service_Layer;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace PresentationLayer.ViewModel.Components
 {
@@ -15,6 +16,7 @@ namespace PresentationLayer.ViewModel.Components
         private RelayCommand _addMealTime;
         private RelayCommand _deleteMealTime;
         private RelayCommand _deleteSelectedProduct;
+        private RelayCommand _createPDF;
 
         public ObservableCollection<MealTime> MealTimes => new ObservableCollection<MealTime>(_dataService.GetMealTimes());
         public ObservableCollection<Product> Products
@@ -144,6 +146,18 @@ namespace PresentationLayer.ViewModel.Components
                  _dataService.RemoveMealTimeProduct(SelectedMealTime, SelectedProduct);
                  UpdateComponent();
              }
+         }) );
+        public RelayCommand CreatePDF => _createPDF ?? ( _createPDF = new RelayCommand(obj =>
+         {
+             if(!PDFGenerator.CreatePDF(_user, _user.DailyRation))
+             {
+                 MessageBoxResult msg = MessageBox.Show("PDF файл успешно создан", "PDF создан успешно", MessageBoxButton.OK);
+             }
+             else
+             {
+                 MessageBoxResult msg = MessageBox.Show("При создании PDF возникла ошибка", "Ошибка", MessageBoxButton.OK);
+             }
+                
          }) );
 
         public void UpdateComponent()

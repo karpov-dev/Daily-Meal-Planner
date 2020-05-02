@@ -91,5 +91,16 @@ namespace Business_Layer
                 "Высокая"
             };
         }
+        public string GetCurrentStringActivity()
+        {
+            switch ( Activity )
+            {
+                case Activity.Low: return "Low";
+                case Activity.Normal: return "Normal";
+                case Activity.Average: return "Average";
+                case Activity.High: return "High";
+                default: return "";
+            }
+        }
     }
 }

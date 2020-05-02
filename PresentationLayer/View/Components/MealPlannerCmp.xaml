@@ -144,6 +144,8 @@
                            Grid.Column="2"
                            Margin="5"/>
             </Grid>
+            <Button Content="Сохранить в PDF"
+                    Command="{Binding CreatePDF}" Margin="3"/>
         </StackPanel>
     </Grid>
 </UserControl>
